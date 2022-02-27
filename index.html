@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TheKittyCat</title>
+        <link rel="shortcut icon" href="./cat.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <header class="d-flex flex-column justify-content-center align-items-center mt-4">
+            <img src="./pawprint.png" width="60px" height="60px" alt="">
+            <h1 class="text-danger fs-1 fw-bolder">Kitty-Cat</h1>
+        </header>
+        <main class=" d-flex flex-column flex-sm-column justify-content-center">
+            <!--  data input and receiving sectin -->
+            <div class="w-50 input-group mb-3 mx-auto ">
+
+                <input id="searchCats" type="text" class="form-control rounded-3 border-1"
+                    placeholder="Search Kitten By Name" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+
+                <button onclick="displayCatName()" class="btn btn-outline-0 border-0 btn-danger " type="button"
+                    id="search-btn">Search</button>
+            </div>
+
+
+            <div class="d-md-flex flex-sm-column flex-md-row w-100 ">
+
+                <!-- Display cats Id name only  -->
+                <div id="displayCatsName"
+                    class="d-flex flex-sm-row w-50 flex-wrap flex-sm-wrap overflow-scroll h-auto mx-auto ">
+                    <h6 class=" text-danger my-auto bg-light p-1 bg-dark">Available Cats Breed</h6>
+                </div>
+
+
+                <!-- Display cats with details SEction -->
+                <div id="displayCatInfo"
+                    class="d-flex flex-column justify-content-center p-4 w-50 mx-auto text-sm-center ">
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+
+
+
+        <script src="./app.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
